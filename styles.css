@@ -74,6 +74,39 @@ body.menu-open {
         transform: scale(1);
     }
     
+    .scroll-rotate-in {
+        opacity: 0;
+        transform: rotate(-10deg) translateY(30px);
+        transition: all 0.9s ease-out;
+    }
+    
+    .scroll-rotate-in.visible {
+        opacity: 1;
+        transform: rotate(0deg) translateY(0);
+    }
+    
+    .scroll-bounce-in {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8);
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .scroll-bounce-in.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    
+    .scroll-flip-in {
+        opacity: 0;
+        transform: rotateY(90deg);
+        transition: all 0.7s ease-out;
+    }
+    
+    .scroll-flip-in.visible {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    
     .stagger-animation {
         transition-delay: 0.1s;
     }
@@ -88,6 +121,143 @@ body.menu-open {
     
     .stagger-animation:nth-child(4) {
         transition-delay: 0.4s;
+    }
+    
+    /* Mobile Opening Hours Section */
+    .mobile-opening-hours {
+        display: block;
+        background-color: #19191a;
+        padding: 80px 20px;
+        color: white;
+    }
+    
+    .mobile-hours-container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .mobile-hours-header {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .mobile-hours-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 32px;
+        font-weight: 400;
+        color: white;
+        margin: 0;
+    }
+    
+    .mobile-hours-main {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .mobile-hours-left,
+    .mobile-hours-right {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .mobile-hours-divider {
+        width: 2px;
+        height: 60px;
+        background: linear-gradient(to bottom, transparent, #b3925a, transparent);
+    }
+    
+    .mobile-hours-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .mobile-day {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 12px;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .mobile-time-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+    
+    .mobile-time {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #707071;
+        line-height: 1;
+    }
+    
+    .mobile-hours-reservation {
+        text-align: center;
+    }
+    
+    .mobile-reservation-text {
+        display: inline-block;
+        padding: 12px 30px;
+        border: 2px solid #b3925a;
+        background: transparent;
+        color: white;
+        font-family: 'Playfair Display', serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 15px;
+    }
+    
+    .mobile-reservation-text:hover {
+        background-color: #b3925a;
+        color: white;
+    }
+    
+    .mobile-reservation-note {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+        color: white;
+        margin: 10px 0;
+        line-height: 1.4;
+        opacity: 0.8;
+    }
+    
+    .mobile-hours-address {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 15px;
+    }
+    
+    .mobile-location-icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .mobile-address-text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+        color: white;
+        opacity: 0.8;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-opening-hours {
+        display: none;
     }
 }
 
@@ -1225,10 +1395,7 @@ body.menu-open {
 
 @media (max-width: 768px) {
     .parallax-section {
-        background-image: none;
-        background-color: #19191a;
-        background-attachment: scroll;
-        min-height: auto;
+        display: none;
     }
     
     .parallax-container {

@@ -173,6 +173,15 @@ document.addEventListener('DOMContentLoaded', function() {
             openModal();
         });
     });
+    
+    // Mobile reservation button
+    const mobileReservationBtn = document.getElementById('mobile-reservation-btn');
+    if (mobileReservationBtn) {
+        mobileReservationBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal();
+        });
+    }
 
     modalClose.addEventListener('click', closeModal);
     cancelBtn.addEventListener('click', closeModal);
@@ -243,7 +252,7 @@ Laola Restaurant Website
 
         // Observe all animation elements
         const animatedElements = document.querySelectorAll(
-            '.scroll-fade-in, .scroll-slide-left, .scroll-slide-right, .scroll-scale-up'
+            '.scroll-fade-in, .scroll-slide-left, .scroll-slide-right, .scroll-scale-up, .scroll-rotate-in, .scroll-bounce-in, .scroll-flip-in'
         );
         
         animatedElements.forEach(el => {
