@@ -225,4 +225,34 @@ Laola Restaurant Website
         alert('Vielen Dank für Ihre Reservierungsanfrage! Ihr E-Mail-Programm wird geöffnet.');
         closeModal();
     });
+    
+    // Mobile scroll animations with Intersection Observer
+    if (window.innerWidth <= 768) {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animation elements
+        const animatedElements = document.querySelectorAll(
+            '.scroll-fade-in, .scroll-slide-left, .scroll-slide-right, .scroll-scale-up'
+        );
+        
+        animatedElements.forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add stagger delay for child elements
+        document.querySelectorAll('.stagger-animation').forEach((el, index) => {
+            el.style.transitionDelay = `${0.1 + (index * 0.1)}s`;
+        });
+    }
 });
