@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="assets/images/logo.png" alt="Restaurant Logo" id="logo">
+            </div>
+            <div class="navbar-menu">
+                <a href="#home" class="active">STARTSEITE</a>
+                <a href="#menu">SPEISEKARTE</a>
+                <a href="#" id="nav-reservation-btn">RESERVIERUNG</a>
+                <a href="#contact">STANDORT</a>
+                <a href="#contact">KONTAKT</a>
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active">
+                <img src="assets/images/1.png" alt="Restaurant Interior">
+            </div>
+            <div class="slide">
+                <img src="assets/images/2.png" alt="Delicious Food">
+            </div>
+            <div class="slide">
+                <img src="assets/images/3.png" alt="Chef Cooking">
+            </div>
+        </div>
+        
+        <div class="hero-title">
+            <h1 class="hero-welcome" id="hero-main-text">Willkommen bei Laola</h1>
+            <h2 class="hero-subtitle">Restaurant & Bar</h2>
+            <p class="hero-address">Görzerstraße 55 81549 München</p>
+            <a href="#" class="hero-button" id="reservation-btn">RESERVIERUNG</a>
+        </div>
+        
+        <div class="hero-contact">
+            <div class="hero-text-container">
+                <div class="hero-reservation">RESERVIERUNG</div>
+                <div class="hero-phone">0174 1080603</div>
+            </div>
+            <div class="phone-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="hero-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="about-title">LAOLA RESTAURANT</h2>
+                <h3 class="about-subtitle">Ein paar Worte über uns</h3>
+                <div class="about-text">
+                    <p>Unser familiengeführtes Restaurant Laola begrüßt Sie herzlich in einer warmen Atmosphäre, die türkische Gastfreundschaft mit bayerischer Gemütlichkeit verbindet. Wir bieten Ihnen eine einzigartige kulinarische Reise durch die vielfältige Welt der türkischen Küche.</p>
+                    
+                    <p>Mit ständig wechselnden köstlichen Spezialitäten aus unserer eigenen Küche und hausgemachten Leckereien verwöhnen wir Sie mit traditionellen Familienrezepten, die mit viel Liebe zubereitet werden.</p>
+                    
+                    <div class="about-contact">
+                        <div class="about-contact-text">
+                            <div class="about-reservation">RESERVIERUNG</div>
+                            <div class="about-phone">0174 1080603</div>
+                        </div>
+                        <div class="about-contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#b3925a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-images">
+                <div class="about-image">
+                    <img src="assets/images/5.png" alt="Restaurant Interior">
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Turkish Food">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="artist-section">
+        <div class="artist-container">
+            <div class="artist-photo">
+                <img src="assets/images/tayfun.png" alt="Tayfun Ersan">
+            </div>
+            <div class="artist-info">
+                <div class="artist-date">JEDEN FREITAG</div>
+                <h2 class="artist-name">Türkische Live-Musik</h2>
+                <h3 class="artist-title">Diese Woche: 19.09.2025 - Tayfun Ersan</h3>
+                <p class="artist-description">Erleben Sie authentische türkische Musik mit traditionellen Instrumenten und modernen Interpretationen klassischer Melodien. Tayfun Ersan verzaubert Sie mit seiner einzigartigen Stimme und virtuosen Saz-Spiel, das die Seele berührt und das Herz zum Schwingen bringt. 
+
+                Seine emotionalen Balladen und temperamentvollen Rhythmen entführen Sie in die faszinierende Welt der anatolischen Musikkultur. Lassen Sie sich von den warmen Klängen der Oud und den melancholischen Tönen der Zurna in eine andere Zeit versetzen, während traditionelle Volkslieder mit zeitgenössischen Arrangements verschmelzen und einen unvergesslichen Abend schaffen.</p>
+                <div class="artist-time">
+                    <span class="time-label">SHOWTIME</span>
+                    <span class="time-value">20:00 - 02:00 Uhr</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="menu-container">
+            <div class="menu-header">
+                <div class="menu-subtitle">UNSERE SPEZIALITÄTEN</div>
+                <h2 class="menu-title">Fix Menü Auswahl</h2>
+            </div>
+            <div class="menu-cards">
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fix Menü 1">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fix Menü 1</h3>
+                        <p class="card-description">Klassische türkische Vorspeisen, Adana Kebab mit Reis und Salat, türkischer Tee</p>
+                        <div class="card-price">€24,90</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fix Menü 2">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fix Menü 2</h3>
+                        <p class="card-description">Mezze-Platte, gegrilltes Lammfleisch mit Bulgur und Gemüse, Baklava als Dessert</p>
+                        <div class="card-price">€29,90</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fix Menü 3">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fix Menü 3</h3>
+                        <p class="card-description">Vegetarische Vorspeisen, Döner Teller mit Pommes und Salat, türkischer Kaffee</p>
+                        <div class="card-price">€22,90</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax-section">
+        <div class="parallax-container">
+            <div class="testimonials">
+                <div class="testimonials-header">
+                    <h3 class="testimonials-title">Was unsere Gäste sagen</h3>
+                </div>
+                <div class="testimonials-slider" id="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Das authentische türkische Essen und die warme Atmosphäre haben uns begeistert. Die Live-Musik am Freitag war ein unvergessliches Erlebnis!"
+                        </div>
+                        <div class="testimonial-author">
+                            <span class="author-name">Ayşe Demir</span>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Hervorragender Service und köstliche traditionelle Gerichte. Das Fix Menü ist ein absoluter Geheimtipp!"
+                        </div>
+                        <div class="testimonial-author">
+                            <span class="author-name">Alp Özkan</span>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Ein wunderbarer Ort für die Familie. Die Kinder lieben das türkische Brot und wir genießen die entspannte Atmosphäre!"
+                        </div>
+                        <div class="testimonial-author">
+                            <span class="author-name">Fatma Yılmaz</span>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Die beste türkische Küche in München! Das Personal ist sehr freundlich und die Portionen großzügig."
+                        </div>
+                        <div class="testimonial-author">
+                            <span class="author-name">Ali Karaca</span>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Jeden Freitag kommen wir zur Live-Musik. Die Atmosphäre ist einfach magisch und das Essen fantastisch!"
+                        </div>
+                        <div class="testimonial-author">
+                            <span class="author-name">Zeynep Aktaş</span>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="opening-hours">
+                <div class="hours-header">
+                    <h3 class="hours-title">Öffnungszeiten</h3>
+                </div>
+                <div class="hours-main">
+                    <div class="hours-left">
+                        <div class="hours-item">
+                            <span class="day">Dienstag - Donnerstag</span>
+                            <div class="time-container">
+                                <span class="time">17:00</span>
+                                <span class="time">01:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hours-divider"></div>
+                    <div class="hours-right">
+                        <div class="hours-item">
+                            <span class="day">Freitag - Samstag</span>
+                            <div class="time-container">
+                                <span class="time">19:00</span>
+                                <span class="time">03:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hours-reservation">
+                    <span class="reservation-text">Reservierung</span>
+                    <p class="reservation-note">Sie können auch unter der Nummer 0174 1080603 anrufen, um eine Reservierung vorzunehmen.</p>
+                    <div class="hours-address">
+                        <svg class="location-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="#b3925a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="10" r="3" stroke="#b3925a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="address-text">Görzerstraße 55 81549 München</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events-section" id="events">
+        <div class="events-container">
+            <div class="events-header">
+                <div class="events-subtitle">BESONDERE ANLÄSSE</div>
+                <h2 class="events-title">Ihre Veranstaltung bei uns</h2>
+            </div>
+            
+            <div class="events-content">
+                <div class="events-text">
+                    <p class="events-description">
+                        Gerne helfen wir Ihnen auch bei der Planung und Umsetzung Ihrer ganz besonderen Veranstaltungen für Anlässe wie Geburtstage, Verlobungen, Hennaabende, und Hochzeiten. Mit unserer Saalkapazität von 150 Personen stehen wir Ihnen gerne zur Verfügung und sorgen dafür dass sie einen unvergesslichen Abend verbringen!
+                    </p>
+                    <p class="events-contact-text">
+                        Füllen Sie dazu einfach das Formular aus, oder rufen sie uns unter <strong>0174/1080603</strong> an und lassen Sie uns bei der Planung helfen!
+                    </p>
+                    <a href="#contact" class="events-button">KONTAKT AUFNEHMEN</a>
+                </div>
+                
+                <div class="events-images">
+                    <div class="events-image-grid">
+                        <div class="events-image large">
+                            <img src="assets/images/1a.png" alt="Hochzeit im Restaurant">
+                        </div>
+                        <div class="events-image small">
+                            <img src="assets/images/2a.png" alt="Geburtstag Feier">
+                        </div>
+                        <div class="events-image small">
+                            <img src="assets/images/3a.png" alt="Verlobung">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-location-section" id="contact">
+        <div class="contact-location-container">
+            <div class="contact-section">
+                <div class="contact-header">
+                    <div class="contact-subtitle">KONTAKT</div>
+                    <h2 class="contact-title">Sprechen Sie uns an</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#b3925a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Telefon</span>
+                            <span class="contact-value">0174 1080603</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#b3925a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="22,6 12,13 2,6" stroke="#b3925a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">E-Mail</span>
+                            <span class="contact-value">info@laola-restaurant.de</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="#b3925a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="12,6 12,12 16,14" stroke="#b3925a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Öffnungszeiten</span>
+                            <span class="contact-value">Di-Do 17:00-01:00, Fr-Sa 19:00-03:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="location-section">
+                <div class="location-header">
+                    <div class="location-subtitle">STANDORT</div>
+                    <h2 class="location-title">Besuchen Sie uns</h2>
+                </div>
+                <div class="location-content">
+                    <div class="location-address">
+                        <div class="location-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="#b3925a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="10" r="3" stroke="#b3925a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="address-details">
+                            <span class="address-street">Görzerstraße 55</span>
+                            <span class="address-city">81549 München</span>
+                            <span class="address-country">Deutschland</span>
+                        </div>
+                    </div>
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.8547852845845!2d11.589821315916865!3d48.10968467922588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd5%3A0x10fdb8c8ac76b3!2sG%C3%B6rzerstra%C3%9Fe%2055%2C%2081549%20M%C3%BCnchen%2C%20Germany!5e0!3m2!1sen!2sde!4v1634567890123!5m2!1sen!2sde" 
+                               width="100%" 
+                               height="250" 
+                               style="border:0; border-radius: 8px;" 
+                               allowfullscreen="" 
+                               loading="lazy" 
+                               referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="location-directions">
+                        <h4>Anfahrt</h4>
+                        <p>Mit öffentlichen Verkehrsmitteln erreichen Sie uns bequem mit der U-Bahn Linie U2 (Haltestelle Giesing). Das Restaurant befindet sich nur wenige Gehminuten vom Bahnhof entfernt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3 class="footer-brand">LAOLA</h3>
+                    <p class="footer-tagline">Restaurant & Bar</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Startseite</a></li>
+                        <li><a href="#menu">Speisekarte</a></li>
+                        <li><a href="#" class="footer-reservation-btn">Reservierung</a></li>
+                        <li><a href="#contact">Standort</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-title">Kontakt</h4>
+                    <div class="footer-contact-info">
+                        <p class="footer-contact-item">
+                            <span class="contact-icon-small">📞</span>
+                            0174 1080603
+                        </p>
+                        <p class="footer-contact-item">
+                            <span class="contact-icon-small">✉️</span>
+                            info@laola-restaurant.de
+                        </p>
+                        <p class="footer-contact-item">
+                            <span class="contact-icon-small">📍</span>
+                            Görzerstraße 55<br>
+                            81549 München
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4 class="footer-title">Öffnungszeiten</h4>
+                    <div class="footer-hours-info">
+                        <p class="footer-hours-item">
+                            <span class="hours-day">Dienstag - Donnerstag</span>
+                            <span class="hours-time">17:00 - 01:00</span>
+                        </p>
+                        <p class="footer-hours-item">
+                            <span class="hours-day">Freitag - Samstag</span>
+                            <span class="hours-time">19:00 - 03:00</span>
+                        </p>
+                        <p class="footer-special">
+                            🎵 Jeden Freitag Live-Musik ab 20:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Laola Restaurant & Bar. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Google</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Reservation Modal -->
+    <div class="reservation-modal" id="reservation-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Tisch Reservierung</h2>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="reservation-form" id="reservation-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Datum *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Uhrzeit *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Uhrzeit wählen</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Personen *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Anzahl</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 Personen</option>
+                                <option value="3">3 Personen</option>
+                                <option value="4">4 Personen</option>
+                                <option value="5">5 Personen</option>
+                                <option value="6">6 Personen</option>
+                                <option value="7">7 Personen</option>
+                                <option value="8">8 Personen</option>
+                                <option value="9+">9+ Personen</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Besondere Wünsche</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Allergien, besondere Anlässe, etc."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="cancel-btn">Abbrechen</button>
+                        <button type="submit" class="btn-primary">Reservierung senden</button>
+                    </div>
+                </form>
+                
+                <div class="contact-info">
+                    <p class="contact-note">
+                        <strong>Oder rufen Sie uns direkt an:</strong><br>
+                        <a href="tel:01741080603" class="phone-link">0174 1080603</a>
+                    </p>
+                    <p class="opening-note">
+                        <strong>Öffnungszeiten:</strong><br>
+                        Di-Do: 17:00-01:00 | Fr-Sa: 19:00-03:00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
