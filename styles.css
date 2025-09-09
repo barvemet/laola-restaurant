@@ -1158,6 +1158,8 @@ body.menu-open {
 
 @media (max-width: 768px) {
     .parallax-section {
+        background-image: none;
+        background-color: #19191a;
         background-attachment: scroll;
         min-height: auto;
     }
